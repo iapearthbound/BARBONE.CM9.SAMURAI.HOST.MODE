@@ -1,0 +1,7 @@
+--- arch/arm/plat-samsung/include/plat/devs.h
++++ arch/arm/plat-samsung/include/plat/devs.h
+@@ -203,4 +206,4 @@
+ #endif
+ void __init s3c_usb_set_serial(void);
+ 
+-extern struct platform_device s5p_device_ace;+extern struct platform_device s5p_device_ace;

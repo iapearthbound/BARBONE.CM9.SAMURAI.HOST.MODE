@@ -1,0 +1,33 @@
+--- drivers/power/s5pc110_battery.c
++++ drivers/power/s5pc110_battery.c
+@@ -184,6 +185,7 @@
+ 	SEC_BATTERY_ATTR(batt_temp_check),
+ 	SEC_BATTERY_ATTR(batt_full_check),
+ 	SEC_BATTERY_ATTR(batt_type),
++	SEC_BATTERY_ATTR(disable_charger),
+ };
+ 
+ static void max8998_lowbat_config(struct chg_data *chg, int on)
+@@ -680,7 +682,7 @@
+ 	/* if max8998 has detected vdcin */
+ 	if (max8998_check_vdcin(chg) == 1) {
+ 		vdc_status = 1;
+-		if (chg->bat_info.dis_reason) {
++		if (chg->bat_info.dis_reason || disable_charger) {
+ 			/* have vdcin, but cannot charge */
+ 			chg->charging = 0;
+ 			ret = max8998_charging_control(chg);
+@@ -875,6 +880,13 @@
+ 			ret = count;
+ 		}
+ 		break;
++	case DISABLE_CHARGER:
++		if (sscanf(buf, "%d\n", &x) == 1) {
++			disable_charger = x;
++			ret = count;
++		}
++		break;
++
+ 	default:
+ 		ret = -EINVAL;
+ 	}

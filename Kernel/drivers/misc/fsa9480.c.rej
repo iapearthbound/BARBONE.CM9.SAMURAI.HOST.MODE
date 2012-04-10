@@ -1,0 +1,11 @@
+--- drivers/misc/fsa9480.c
++++ drivers/misc/fsa9480.c
+@@ -416,7 +416,7 @@
+ 				pdata->usb_cb(FSA9480_DETACHED);
+ 				}
+ #endif
+-#ifdef CONFIG_USB_S3C_OTG_HOST
++#if defined CONFIG_USB_S3C_OTG_HOST || defined CONFIG_USB_DWC_OTG
+                                // sztupy: also switch off otg host mode
+                                set_otghost_mode(0);
+ #endif
