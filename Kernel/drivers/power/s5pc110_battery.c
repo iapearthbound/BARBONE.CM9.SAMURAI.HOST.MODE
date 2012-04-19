@@ -997,6 +997,26 @@ static int s3c_cable_status_update(struct chg_data *chg)
 	/* if max8998 has detected vdcin */
 	if (max8998_check_vdcin(chg) == 1) {
 		vdc_status = 1;
+		#ifdef CONFIG_KERNEL_DEBUG_SEC
+        	// Clear upload magic number to protect from sudden power-off...
+        	if ((chg->bat_info.batt_soc <= LOW_BATT_COND_LEVEL) &&
+                    (chg->bat_info.batt_vcell/1000 + 35 <= LOW_BATT_COND_VOLTAGE))          
+        		{
+                		kernel_sec_clear_upload_magic_number();
+        		}
+		#endif
+
+		pr_debug("%s: cable_status = %d, doc_status = %d\n", __func__, chg->cable_status, fsa9480_get_dock_status());
+		if (fsa9480_get_dock_status() && chg->cable_status == CABLE_TYPE_NONE) {
+			chg->cable_status = CABLE_TYPE_AC;
+			chg->lowbat_warning = false;
+			if (chg->esafe == MAX8998_ESAFE_ALLOFF)
+				chg->esafe = MAX8998_USB_VBUS_AP_ON;
+			pr_debug("%s : cable_status = AC\n", __func__);
+			power_supply_changed(&chg->psy_ac);
+			power_supply_changed(&chg->psy_usb);
+		}
+
 		if (chg->bat_info.dis_reason || disable_charger) {
 			/* have vdcin, but cannot charge */
 			chg->charging = 0;
@@ -1269,14 +1289,46 @@ static ssize_t s3c_bat_show_attrs(struct device *dev,
 		i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", chg->bat_info.batt_health);
 		break;
 	case BATT_FULL_CHECK:
-		i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", chg->bat_info.batt_is_full);
+		if (chg->bat_info.charging_status == POWER_SUPPLY_STATUS_FULL)
+			i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", 1);
+		else 
+			i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", 0);
 		break;
+        case AUTH_BATTERY: 
+#ifdef  __VZW_AUTH_CHECK__
+		if (chg->jig_status)
+			i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", 1);
+		else
+			i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n",
+				(chg->bat_info.batt_health == POWER_SUPPLY_HEALTH_UNSPEC_FAILURE) ?
+				0 : 1);
+#else
+			i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", 1);
+#endif
+                break;
+        case BATT_CHG_CURRENT_AVER:
+                i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n",
+			chg->charging ? chg->bat_info.chg_current_adc : 0);
+//                                s3c_bat_get_adc_data(chg->s3c_adc_channel.s3c_adc_chg_current));
+                break;
 	case BATT_TYPE:
 		i += scnprintf(buf + i, PAGE_SIZE - i, "SDI_SDI\n");
 		break;
 	case DISABLE_CHARGER:
-		i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", disable_charger);
+    		i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n", disable_charger);
+    		break;
+#ifdef __SOC_TEST__
+        case SOC_TEST:
+                i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n",
+                        soc_test);
+                break;
+#endif
+#ifdef CONFIG_MACH_VICTORY
+	case BATT_V_F_ADC:
+                i += scnprintf(buf + i, PAGE_SIZE - i, "%d\n",
+                                s3c_bat_get_adc_data(chg->s3c_adc_channel.s3c_adc_v_f));
 		break;
+#endif
 
 #ifdef CONFIG_MACH_VICTORY
 	case BATT_USE_CALL:
