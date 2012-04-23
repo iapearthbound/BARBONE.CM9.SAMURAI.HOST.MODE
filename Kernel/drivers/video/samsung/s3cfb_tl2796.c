@@ -79,7 +79,7 @@ struct s5p_lcd *lcd_;
 u32 original_color_adj_mults[3];
 unsigned int panel_config_sequence = 0;
 
-int hacky_v1_offset[3] = {-03, -10, -16};
+int hacky_v1_offset[3] = {-48, -54, -54};
 
 static const u16 s6e63m0_SEQ_ETC_SETTING_SAMSUNG[] = {
 /* ETC Condition Set Command */

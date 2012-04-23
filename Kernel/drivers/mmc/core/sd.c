@@ -535,7 +535,9 @@ static int mmc_sd_init_card(struct mmc_host *host, u32 ocr,
 free_card:
 	if (!oldcard) {
 		mmc_remove_card(card);
+		mmc_claim_host(host);
 		host->card = NULL;
+		mmc_release_host(host);
 	}
 err:
 

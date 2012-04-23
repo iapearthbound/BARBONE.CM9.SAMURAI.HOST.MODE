@@ -1398,9 +1398,32 @@ static ssize_t s3c_bat_store_attrs(struct device *dev, struct device_attribute *
 			ret = count;
 		}
 		break;
-	case DISABLE_CHARGER:
+case DISABLE_CHARGER:
+if (sscanf(buf, "%d\n", &x) == 1) {
+disable_charger = x;
+ret = count;
+}
+break;
+#ifdef __SOC_TEST__
+        case SOC_TEST:
+                if (sscanf(buf, "%d\n", &x) == 1) {
+                        soc_test = x;
+                        ret = count;
+                }
+                break;
+#endif
+#ifdef SPRINT_SLATE_TEST
+        case SLATE_TEST_MODE:
+             if(strncmp(buf, "1", 1) == 0)
+                    chg->slate_test_mode =true;
+             else
+                    chg->slate_test_mode =false;
+             break;                   
+#endif
+#ifdef CONFIG_MACH_VICTORY
+	case BATT_USE_CALL:
 		if (sscanf(buf, "%d\n", &x) == 1) {
-			disable_charger = x;
+			s3c_bat_use_module(chg, USE_CALL, x);
 			ret = count;
 		}
 		break;
@@ -1446,6 +1469,7 @@ static ssize_t s3c_bat_store_attrs(struct device *dev, struct device_attribute *
 			ret = count;
 		}
 		break;
+#endif
 	default:
 		ret = -EINVAL;
 	}
