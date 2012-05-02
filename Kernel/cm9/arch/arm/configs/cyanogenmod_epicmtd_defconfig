@@ -3,7 +3,7 @@
 # Linux kernel version: 2.6.35.7
 # Mon Jan 23 04:51:40 2012
 #
-# CONFIG_GPU_OC is not set
+CONFIG_GPU_OC=y
 CONFIG_ARM=y
 CONFIG_HAVE_PWM=y
 CONFIG_SYS_SUPPORTS_APM_EMULATION=y
