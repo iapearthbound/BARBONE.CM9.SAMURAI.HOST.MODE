@@ -1,0 +1,1 @@
+cmd_drivers/media/video/samsung/jpeg_v2/built-in.o :=  /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/media/video/samsung/jpeg_v2/built-in.o drivers/media/video/samsung/jpeg_v2/jpg_mem.o drivers/media/video/samsung/jpeg_v2/jpg_misc.o drivers/media/video/samsung/jpeg_v2/jpg_opr.o drivers/media/video/samsung/jpeg_v2/s3c-jpeg.o 

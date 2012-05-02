@@ -1,0 +1,7 @@
+kernel/drivers/usb/class/cdc-acm.ko
+kernel/drivers/usb/core/usbcore.ko
+kernel/drivers/usb/dwc/dwc.ko
+kernel/drivers/usb/host/s3c-otg/s3c_otg_hcd.ko
+kernel/drivers/usb/serial/usbserial.ko
+kernel/drivers/usb/serial/ftdi_sio.ko
+kernel/drivers/usb/storage/usb-storage.ko

@@ -1,0 +1,1 @@
+cmd_drivers/media/video/gspca/gspca_main.ko := /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL -r  -T /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/scripts/module-common.lds --build-id -o drivers/media/video/gspca/gspca_main.ko drivers/media/video/gspca/gspca_main.o drivers/media/video/gspca/gspca_main.mod.o

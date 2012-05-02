@@ -1,0 +1,1 @@
+cmd_drivers/gpu/pvr/s3c_lcd.o := /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/gpu/pvr/s3c_lcd.o drivers/gpu/pvr/s3c_lcd/s3c_displayclass.o drivers/gpu/pvr/s3c_lcd/s3c_lcd.o 

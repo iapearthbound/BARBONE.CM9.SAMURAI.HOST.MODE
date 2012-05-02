@@ -1,0 +1,2 @@
+kernel/drivers/regulator/max8998.ko
+kernel/drivers/regulator/max8893.ko

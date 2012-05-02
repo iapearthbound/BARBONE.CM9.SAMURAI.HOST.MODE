@@ -1,0 +1,1 @@
+cmd_arch/arm/boot/compressed/piggy.xzkern := (cat arch/arm/boot/compressed/../Image | sh /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/scripts/xz_wrap.sh && printf \100\224\245\000) > arch/arm/boot/compressed/piggy.xzkern || (rm -f arch/arm/boot/compressed/piggy.xzkern ; false)

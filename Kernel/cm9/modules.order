@@ -1,0 +1,4 @@
+kernel/drivers/misc/vibetonz/vibrator.ko
+kernel/drivers/net/wireless/wimax/cmc7xx_sdio.ko
+kernel/drivers/net/wireless/bcm4329/bcm4329.ko
+kernel/drivers/media/video/gspca/gspca_main.ko

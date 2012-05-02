@@ -1,0 +1,18 @@
+--- Kernel/drivers/usb/gadget/f_rndis.c
++++ Kernel/drivers/usb/gadget/f_rndis.c
+@@ -731,7 +743,6 @@
+ #endif
+ 
+ 	rndis_control_intf.bInterfaceNumber = status;
+-	rndis_union_desc.bMasterInterface0 = status;
+ 
+ 	status = usb_interface_id(c, f);
+ 	if (status < 0)
+@@ -739,7 +750,6 @@
+ 	rndis->data_id = status;
+ 
+ 	rndis_data_intf.bInterfaceNumber = status;
+-	rndis_union_desc.bSlaveInterface0 = status;
+ 
+ 	status = -ENODEV;
+ 
