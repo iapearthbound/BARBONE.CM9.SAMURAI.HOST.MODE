@@ -38,9 +38,9 @@
 
 /* UV */
 extern unsigned int freq_uv_table[NUM_FREQ][3];
-int exp_UV_mV[NUM_FREQ] =     {       0,       0,       0,       0,       0,       0,       0,        0,      0,      0,      0 };
-int enabled_freqs[NUM_FREQ] = {       0,       0,       0,       0,       1,       0,       1,        0,      1,      1,      1 };
-/*  clock freqs               {  1.4GHz,  1.3GHz,  1.2GHz,  1.1GHz,  1.0GHz,  900MHz,  800MHz,  600MHz,  400MHz, 200MHz, 100MHz } */
+int exp_UV_mV[NUM_FREQ] =     {       0,       0,       0,       0,       0,       0,       0,       0,        0,      0,      0,      0 };
+int enabled_freqs[NUM_FREQ] = {       0,       0,       0,       0,       0,       1,       0,       1,        0,      1,      1,      1 };
+/*  clock freqs               {  1.5GHz,  1.4GHz,  1.3GHz,  1.2GHz,  1.1GHz,  1.0GHz,  900MHz,  800MHz,  600MHz,  400MHz, 200MHz, 100MHz } */
 
 extern unsigned int gpu[NUM_FREQ][2];
 
