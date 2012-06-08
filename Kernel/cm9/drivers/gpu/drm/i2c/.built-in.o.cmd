@@ -1,1 +1,1 @@
-cmd_drivers/gpu/drm/i2c/built-in.o :=  rm -f drivers/gpu/drm/i2c/built-in.o; /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ar rcs drivers/gpu/drm/i2c/built-in.o
+cmd_drivers/gpu/drm/i2c/built-in.o :=  rm -f drivers/gpu/drm/i2c/built-in.o; /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ar rcs drivers/gpu/drm/i2c/built-in.o

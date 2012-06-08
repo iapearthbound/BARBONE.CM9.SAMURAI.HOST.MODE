@@ -111,6 +111,8 @@ choice
 	config DEFAULT_NOOP
 		bool "No-op"
 
+	config DEFAULT_VR
+		bool "V(R)" if IOSCHED_VR=y
 endchoice
 
 config DEFAULT_IOSCHED

@@ -13,14 +13,14 @@
 @	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include
+@ -I/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include
 @ -Iinclude -Iarch/arm/mach-s5pv210/include -Iarch/arm/plat-s5p/include
 @ -Iarch/arm/plat-samsung/include -iprefix
-@ /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
+@ /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
 @ -D__USES_INITFINI__ -D__KERNEL__ -D__LINUX_ARM_ARCH__=7 -Uarm
 @ -DKBUILD_STR(s)=#s -DKBUILD_BASENAME=KBUILD_STR(bounds)
 @ -DKBUILD_MODNAME=KBUILD_STR(bounds) -isystem
-@ /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
+@ /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
 @ -include include/generated/autoconf.h -MD kernel/.bounds.s.d
 @ kernel/bounds.c -mlittle-endian -marm -mapcs -mno-sched-prolog
 @ -mabi=aapcs-linux -mno-thumb-interwork -march=armv7-a -msoft-float
@@ -497,11 +497,11 @@ foo:
 	.ascii	"PG_buddy\000"
 .LASF5:
 	.ascii	"long long int\000"
-.LASF49:
-	.ascii	"/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/c"
-	.ascii	"m9\000"
 .LASF45:
 	.ascii	"ZONE_MOVABLE\000"
+.LASF49:
+	.ascii	"/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9"
+	.ascii	"\000"
 .LASF9:
 	.ascii	"long int\000"
 .LASF46:

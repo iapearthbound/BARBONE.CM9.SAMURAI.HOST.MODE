@@ -24560,7 +24560,7 @@ c08ea1d0 T kallsyms_names
 c095b580 T kallsyms_markers
 c095b800 T kallsyms_token_table
 c095bb80 T kallsyms_token_index
-c09e0260 t _fw_samsung_mfc_fw_bin_name
+c09e025c t _fw_samsung_mfc_fw_bin_name
 c09e1000 A __end_pci_fixups_early
 c09e1000 A __end_pci_fixups_enable
 c09e1000 A __end_pci_fixups_final

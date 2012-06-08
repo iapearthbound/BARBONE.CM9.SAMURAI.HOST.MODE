@@ -1,1 +1,1 @@
-cmd_drivers/scsi/sd_mod.o := /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/scsi/sd_mod.o drivers/scsi/sd.o 
+cmd_drivers/scsi/sd_mod.o := /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/scsi/sd_mod.o drivers/scsi/sd.o 

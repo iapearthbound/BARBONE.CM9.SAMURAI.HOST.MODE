@@ -1,1 +1,1 @@
-cmd_drivers/video/omap2/built-in.o :=  /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/video/omap2/built-in.o drivers/video/omap2/dss/built-in.o drivers/video/omap2/omapfb/built-in.o drivers/video/omap2/displays/built-in.o 
+cmd_drivers/video/omap2/built-in.o :=  /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/video/omap2/built-in.o drivers/video/omap2/dss/built-in.o drivers/video/omap2/omapfb/built-in.o drivers/video/omap2/displays/built-in.o 

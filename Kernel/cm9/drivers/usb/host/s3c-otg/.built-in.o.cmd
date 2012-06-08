@@ -1,1 +1,1 @@
-cmd_drivers/usb/host/s3c-otg/built-in.o :=  /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/usb/host/s3c-otg/built-in.o drivers/usb/host/s3c-otg/s3c_otg_hcd.o 
+cmd_drivers/usb/host/s3c-otg/built-in.o :=  /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/usb/host/s3c-otg/built-in.o drivers/usb/host/s3c-otg/s3c_otg_hcd.o 

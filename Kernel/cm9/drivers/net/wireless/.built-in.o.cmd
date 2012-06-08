@@ -1,1 +1,1 @@
-cmd_drivers/net/wireless/built-in.o :=  /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/net/wireless/built-in.o drivers/net/wireless/wimax/built-in.o drivers/net/wireless/wimaxgpio/built-in.o 
+cmd_drivers/net/wireless/built-in.o :=  /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/net/wireless/built-in.o drivers/net/wireless/wimax/built-in.o drivers/net/wireless/wimaxgpio/built-in.o 

@@ -13,14 +13,14 @@
 @	compiled by GNU C version 4.4.3, GMP version 4.2.4, MPFR version 2.4.1.
 @ GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 @ options passed:  -nostdinc
-@ -I/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include
+@ -I/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include
 @ -Iinclude -Iarch/arm/mach-s5pv210/include -Iarch/arm/plat-s5p/include
 @ -Iarch/arm/plat-samsung/include -iprefix
-@ /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
+@ /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/
 @ -D__USES_INITFINI__ -D__KERNEL__ -D__LINUX_ARM_ARCH__=7 -Uarm
 @ -DKBUILD_STR(s)=#s -DKBUILD_BASENAME=KBUILD_STR(asm_offsets)
 @ -DKBUILD_MODNAME=KBUILD_STR(asm_offsets) -isystem
-@ /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
+@ /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/../lib/gcc/arm-eabi/4.4.3/include
 @ -include include/generated/autoconf.h -MD
 @ arch/arm/kernel/.asm-offsets.s.d arch/arm/kernel/asm-offsets.c
 @ -mlittle-endian -marm -mapcs -mno-sched-prolog -mabi=aapcs-linux
@@ -463,17 +463,17 @@ main:
 	.4byte	0x0
 	.4byte	0x0
 	.file 2 "include/asm-generic/int-ll64.h"
-	.file 3 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/types.h"
-	.file 4 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/posix_types.h"
+	.file 3 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/types.h"
+	.file 4 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/posix_types.h"
 	.file 5 "include/linux/types.h"
 	.file 6 "include/linux/capability.h"
 	.file 7 "include/linux/thread_info.h"
 	.file 8 "include/linux/time.h"
-	.file 9 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/fpstate.h"
-	.file 10 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/thread_info.h"
-	.file 11 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/system.h"
+	.file 9 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/fpstate.h"
+	.file 10 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/thread_info.h"
+	.file 11 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/system.h"
 	.file 12 "include/linux/sched.h"
-	.file 13 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/processor.h"
+	.file 13 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/processor.h"
 	.file 14 "include/linux/list.h"
 	.file 15 "include/linux/spinlock_types_up.h"
 	.file 16 "include/linux/spinlock_types.h"
@@ -488,15 +488,15 @@ main:
 	.file 25 "include/linux/wait.h"
 	.file 26 "include/linux/kernel.h"
 	.file 27 "include/linux/completion.h"
-	.file 28 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/page.h"
+	.file 28 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/page.h"
 	.file 29 "include/linux/mm_types.h"
-	.file 30 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/mmu.h"
+	.file 30 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/mmu.h"
 	.file 31 "include/linux/fs.h"
 	.file 32 "include/linux/mm.h"
 	.file 33 "include/asm-generic/cputime.h"
 	.file 34 "include/linux/rcupdate.h"
 	.file 35 "include/linux/sem.h"
-	.file 36 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/signal.h"
+	.file 36 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/signal.h"
 	.file 37 "include/asm-generic/signal-defs.h"
 	.file 38 "include/asm-generic/siginfo.h"
 	.file 39 "include/linux/signal.h"
@@ -537,11 +537,11 @@ main:
 	.file 74 "include/linux/ioport.h"
 	.file 75 "include/linux/elf.h"
 	.file 76 "include/linux/moduleparam.h"
-	.file 77 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/module.h"
+	.file 77 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/module.h"
 	.file 78 "include/linux/dma-mapping.h"
-	.file 79 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/hwcap.h"
+	.file 79 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/hwcap.h"
 	.file 80 "include/linux/timex.h"
-	.file 81 "/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/mmzone.h"
+	.file 81 "/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9/arch/arm/include/asm/mmzone.h"
 	.file 82 "include/linux/debug_locks.h"
 	.section	.debug_info
 	.4byte	0x75f1
@@ -17000,6 +17000,9 @@ main:
 	.ascii	"task_fork\000"
 .LASF353:
 	.ascii	"map_count\000"
+.LASF1427:
+	.ascii	"/home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/cm9"
+	.ascii	"\000"
 .LASF625:
 	.ascii	"version\000"
 .LASF682:
@@ -18472,9 +18475,6 @@ main:
 	.ascii	"kmem_cache\000"
 .LASF1045:
 	.ascii	"mem_dqblk\000"
-.LASF1427:
-	.ascii	"/home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/Kernel/c"
-	.ascii	"m9\000"
 .LASF569:
 	.ascii	"percpu_counter\000"
 .LASF1231:

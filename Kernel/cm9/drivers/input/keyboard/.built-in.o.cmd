@@ -1,1 +1,1 @@
-cmd_drivers/input/keyboard/built-in.o :=  /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/input/keyboard/built-in.o drivers/input/keyboard/atkbd.o drivers/input/keyboard/cypress-touchkey.o drivers/input/keyboard/s3c-keypad.o 
+cmd_drivers/input/keyboard/built-in.o :=  /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/input/keyboard/built-in.o drivers/input/keyboard/atkbd.o drivers/input/keyboard/cypress-touchkey.o drivers/input/keyboard/s3c-keypad.o 

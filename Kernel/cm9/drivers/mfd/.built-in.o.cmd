@@ -1,1 +1,1 @@
-cmd_drivers/mfd/built-in.o :=  /home/fabian/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/mfd/built-in.o drivers/mfd/mfd-core.o drivers/mfd/max8998.o drivers/mfd/max8998-irq.o 
+cmd_drivers/mfd/built-in.o :=  /home/uber/BARBONE.CM9.SAMURAI.HOST.MODE/arm-eabi-4.4.3/bin/arm-eabi-ld -EL    -r -o drivers/mfd/built-in.o drivers/mfd/mfd-core.o drivers/mfd/max8998.o drivers/mfd/max8998-irq.o 
